@@ -7,7 +7,7 @@
         <img src="'../../public/Logo.png" alt="dount shop logo" width="100" />
       </div>
 
-      <div class="hidden md:flex"> 
+      <div class="hidden lg:flex" id="menu"> 
         <ul class="hidden md:flex space-x-6 text-pink-800 text-1xl font-bold ">
           <li><a href="">HOME</a></li>
           <li><a href="">ABOUT</a></li>
@@ -17,8 +17,19 @@
       </div>
 
       <div> 
-        <button type="button" class="hidden lg:flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Contact Us!</button>        
-        <a class="lg:hidden md:flex" href=""><img src="../../public//bar.png" alt="Burger icons created by nahumam - Flaticon" width="50px"></a>
+        <button type="button" class="hidden lg:flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onclick="toggleMenu()">Contact Us!</button>  
+
+        <a class="lg:hidden md:flex" href="#" onclick="toggleMenu()"><img src="../../public/bar.png" alt="Burger icons created by nahumam - Flaticon" width="50px"></a>
+
+        
       </div>
     </div>
   </section>
+
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
