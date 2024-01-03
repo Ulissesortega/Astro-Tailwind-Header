@@ -15,13 +15,20 @@
           <li><a href="">GALLERY</a></li>
         </ul>
       </div>
-
+      <!-- Button Showing on MD and Above -->
       <div> 
         <button type="button" class="hidden lg:flex text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" onclick="toggleMenu()">Contact Us!</button>  
-
-        <a class="lg:hidden md:flex" href="#" onclick="toggleMenu()"><img src="../../public/bar.png" alt="Burger icons created by nahumam - Flaticon" width="50px"></a>
-
-        
+        <!-- Burger Menu Icon -->
+        <a class="lg:hidden md:flex" href="#" onclick="toggleMenu()"><img src="../../public/bar.png" alt="Burger icons created by nahumam - Flaticon" width="50px"></a>        
+      </div>
+      <!-- Mobile Menu -->
+      <div class="hidden lg:flex" id="menu"> 
+        <ul class="hidden md:flex space-x-6 text-pink-800 text-1xl font-bold ">
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">SERVICES</a></li>
+          <li><a href="">GALLERY</a></li>
+        </ul>
       </div>
     </div>
   </section>
